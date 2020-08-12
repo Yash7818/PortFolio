@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Lemonada', cursive;
+}
+body{
+    background-blend-mode: multiply;
+}
+.main{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    /* position: relative; */
+    /* filter: blur(1.23px); */
+    /* width: 100vw; */
+    z-index: -1;
+    /* position: relative; */
+    /* margin-bottom: -20px; */
+    /* -webkit-clip-path: url(#clip); */
+  /* clip-path: url(#clip); */
+}
+#wave{
+    /* width: 100vw; */
+    height: 200em;
+}
+.nav-bar{
+    /* width: 100%; */
+    padding:1.5em;
+    height:5em;
+    /* background: linear-gradient(30deg,#000,#f2f2f2,#fff); */
+}
+.link-tags{
+    width: auto;
+    margin-right: 0;
+    margin-left: 60%;
+    background:transparent;
+    position: fixed;
+}
+.nav-bar a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: lightslategrey;
+    /* float: right; */
+    margin-right: 2em;
+    text-transform: uppercase;
+    font-family: 'Baloo Tamma 2', cursive;
+    /* transition: s; */
+    /* border-bottom: solid black hidden; */
+}
+.nav-bar a:hover{
+    color: black;
+    /* animation: animate .5s linear ;
+     */
+     border-bottom: 2px solid #000 ;
+}
+@keyframes animate{
+    0%{
+        border-bottom: 0;
+    }
+    100%{
+        border-bottom: 2px solid #000 ;
+    }
+}
+.port_my{
+    display: flex;
+    justify-content:space-evenly;
+    height: 45em; 
+    width: 100%;
+    /* filter:blur(1.3px); */
+    /* margin-top: 6%; */
+    /* z-index: 20; */
+
+}
+.name-tag{
+    margin-top: 15%;
+}
+.port_my .my-image{
+  /* border: 1px solid #000; */
+  height: 23em;
+  width: 23em;
+  margin-top: 8%;
+
+  border-radius: 50%;
+}
+.port_my .my-image img{
+    max-width: 23em;
+    max-height: 23em;
+    border-radius: 50%;
+}
+.fog{
+    height: 50em;
+    z-index: 10;
+}
+#contact{
+    height: 50em;
+}
+#about{
+    /* text-align: center; */
+    /* z-index:1; */
+    padding: 2em;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+.main-fog{
+    display: flex;
+}
+.phonetic svg{
+    height: 30em;
+    margin-top: 6em;
+}
+.about-t{
+    /* width: 50%; */
+    margin-top: 5em;
+}
+.about-t ul li{
+    margin: 1em 0;
+    list-style: disc; 
+}
+.projk{
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    text-align: center;
+    /* margin: 2em; */
+    padding: 3em;
+}
+.projects{
+    padding-left: 4em;
+    font-family: 'Baloo Tamma 2', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    
+}
+.pro{
+    width: 20em;
+    height: 29em;
+    /* border: 1px solid black; */
+    text-align: center;
+    margin: 3em;
+    margin-right: 5em;
+    padding: 1em;
+    border-radius: 2.5em;
+    
+    /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
+    /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
+    /* background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%); */
+    background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+    cursor: pointer;
+    transition: .4s;
+
+}
+.pro:hover{
+    /* box-shadow:2px 20px linear-gradient(to top, #0250c5 0%, #d43f8d 100%); */
+    /* box-shadow: 6px 6px 10px #000; */
+    box-shadow: 0px 0px 4px 4px rgb(104, 101, 101);
+}
+.pro ul{
+    /* border: 1px solid #000; */
+    border-radius: 1.5em;
+        /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
+        background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+        /* background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%); */
+        /* background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%); */
+    }
+.pro ul li{
+    list-style: none;
+}
+/* .container svg{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}*/
+.contact{
+    text-align: center;
+    padding: 6em;
+    /* background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%); */
+    /* background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%); */
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+}
+
+.contact-links{
+    margin-top:3em;
+}
+.contact-links i{
+    margin:0 .5em;
+    transition: .4s;
+    color: rgb(0, 1, 15);
+}
+.contact-links i:hover{
+    font-size: 4em;
+    color: #fff;
+}
