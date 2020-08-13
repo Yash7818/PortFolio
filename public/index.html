@@ -10,14 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
 </head>
 <script src="https://kit.fontawesome.com/90117eb688.js" crossorigin="anonymous"></script>
+<script>
+    opennav = () =>{
+        document.getElementById("my-slider").style.width = "300px";
+    }
+    closeslide = () => {
+        document.getElementById("my-slider").style.width = "0";
+    }
+</script>
 <body>
+    <div class="slider" id="my-slider">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeslide()">&times;</a>
+        <a class="tag" href="#main1">Home</a>
+        <a class="tag" href="#about">About</a>
+        <a class="tag" href="#projects">Projects</a>
+        <a class="tag" href="#contact">Contact</a>
+    </div>
     <div class="main" id="main1">
         <div class="nav-bar">
             <div class="link-tags">
-                <a href="#main1">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a class="tag-1" href="#main1">Home</a>
+                <a class="tag-2" href="#about">About</a>
+                <a class="tag-3" href="#projects">Projects</a>
+                <a class="tag-4" href="#contact">Contact</a>
+                <a class="burger" onclick="opennav()"><i class="fas fa-bars"></i></a>
             </div>
          </div>
         <div class="port_my">
@@ -35,7 +51,7 @@
         <div class="fog" id="about" data-aos="fade-up">
             <div class="main-fog">
                 <div class="phonetic">
-                    <svg width="679" height="675" viewBox="0 0 679 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="480" height="520" viewBox="0 0 679 675" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_dd)">
                         <path d="M474.924 152.995H472.654V39.0346C472.654 28.6938 468.546 18.7766 461.234 11.4646C453.922 4.15266 444.005 0.0448303 433.664 0.0448303H179.874C169.533 0.0448303 159.616 4.15266 152.304 11.4646C144.992 18.7766 140.884 28.6938 140.884 39.0346V88.9648H140.024C139.417 88.9648 138.834 89.206 138.405 89.6355C137.975 90.065 137.734 90.6474 137.734 91.2547V113.585C137.734 114.192 137.975 114.775 138.405 115.204C138.834 115.634 139.417 115.875 140.024 115.875H140.884V138.225H139.824C139.523 138.225 139.225 138.284 138.948 138.399C138.67 138.514 138.417 138.683 138.205 138.896C137.992 139.108 137.823 139.361 137.708 139.639C137.593 139.916 137.534 140.214 137.534 140.515V182.775C137.534 183.382 137.775 183.964 138.205 184.394C138.634 184.823 139.217 185.065 139.824 185.065H140.884V201.455H139.924C139.623 201.455 139.325 201.514 139.048 201.629C138.77 201.744 138.517 201.913 138.305 202.125C138.092 202.338 137.923 202.59 137.808 202.868C137.693 203.146 137.634 203.444 137.634 203.744V246.405C137.634 247.012 137.875 247.595 138.305 248.024C138.734 248.453 139.317 248.695 139.924 248.695H140.884V635.325C140.884 645.665 144.992 655.583 152.304 662.895C159.616 670.207 169.533 674.315 179.874 674.315H433.664C444.005 674.315 453.922 670.207 461.234 662.895C468.546 655.583 472.654 645.665 472.654 635.325V234.725H474.924C475.531 234.725 476.114 234.484 476.543 234.054C476.973 233.625 477.214 233.042 477.214 232.435V155.285C477.214 154.677 476.973 154.095 476.543 153.665C476.114 153.236 475.531 152.995 474.924 152.995Z" fill="#3F3D56"/>
                         <path d="M317.224 30.0844H278.634C277.475 30.0832 276.365 29.6226 275.545 28.8035C274.726 27.9844 274.265 26.8738 274.264 25.7153V24.0444C274.265 22.8859 274.726 21.7753 275.545 20.9562C276.365 20.1371 277.475 19.6764 278.634 19.6752H317.224C318.382 19.6764 319.493 20.1371 320.312 20.9562C321.131 21.7753 321.592 22.8859 321.594 24.0444V25.7153C321.592 26.8738 321.132 27.9844 320.312 28.8035C319.493 29.6226 318.382 30.0832 317.224 30.0844V30.0844Z" fill="white"/>
@@ -116,7 +132,7 @@
                             I'm a Web developer specially intrested in frontend and designing.
                         </li>
                         <li>
-                            I'm currently perceiving my B.tech from <b>Indian Institute Of Information Technology,Surat(IIIT Surat).</b>
+                            I'm currently perceiving my B.tech from <span id="clg-name">Indian Institute Of Information Technology,Surat(IIIT Surat).</span>
                         </li>
                         <li>
                             My main stack for web development is MERN stack.
@@ -436,8 +452,6 @@
                 <a href="https://www.linkedin.com/in/yash-wandhare-10224018b/"> <i class="fab fa-linkedin fa-3x linked"></i></a>
                 <a href="https://github.com/Yash7818"><i class="fab fa-github fa-3x git"></i></a>
                 <a href="mailto:yashwandhare1234@gmail.com"><i class="far fa-envelope fa-3x env"></i></a>
-                
-
             </div>
         </div>
 
