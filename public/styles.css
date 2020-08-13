@@ -317,7 +317,7 @@ body{
         margin-left: 0;
     }
     .contact{
-        padding-left: 3em;
+        padding-left: 1.4em;
         
     }
     .contact  h1{
@@ -328,7 +328,7 @@ body{
         /* display: none; */
         width: 20em;
         height: 17em;
-        margin-left: 1em;
+        margin-left: 1.7em;
     }
     .main-fog{
         padding: 0 2em;
@@ -375,9 +375,13 @@ body{
         display: flex;
         /* display: inline; */
         flex: wrap;
+        padding-left: 1em;
     }
     .contact-links i{
        margin: 0 .25em; 
+       /* margin-right: 3em; */
+       /* margin-left: auto; */
+
     }
     .contact-links i:hover{
         font-size: 3em;
