@@ -39,6 +39,7 @@
                 <a class="burger" onclick="opennav()"><i class="fas fa-bars"></i></a>
             </div>
          </div>
+         
         <div class="port_my">
             <div class="my-image">
                 <img src="./profile.jpg" ></img>
@@ -462,9 +463,26 @@
             let totalHeight = document.body.scrollHeight - window.innerHeight;
             console.log(totalHeight);
             window.onscroll = function(){
+                let nav = document.querySelector('.nav-bar');
                 let progressHeight = (window.pageYOffset/totalHeight)*100;
                 progress.style.height = progressHeight + "%";
+                console.log(progressHeight)
+                if(progressHeight>10){
+                    nav.style.background = '#fff';
+                } else if(progressHeight==0){
+                    nav.style.background = 'transparent';
+                }
             }
+
+           
+         
+            // console.log(totalHeight);
+            // console.log( document.body.scrollHeight);
+            // if(progressHeight){
+            //     console.log(progressHeight)
+            //     nav.style.display = 'none';
+            //     console.log(nav.style.display)
+            // }
         </script>
 
 </body>
