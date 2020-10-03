@@ -468,9 +468,12 @@
                 progress.style.height = progressHeight + "%";
                 console.log(progressHeight)
                 if(progressHeight>10){
-                    nav.style.background = '#fff';
+                    nav.style.background = 'rgba(255,255,255,0.519)';
+                    nav.style.boxShadow = '3px 2px 20px #0000006e';
+                    nav.style.animation = 'uisni 6s linear infinite';
                 } else if(progressHeight==0){
                     nav.style.background = 'transparent';
+                    nav.style.boxShadow = 'none';
                 }
             }
 
