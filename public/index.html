@@ -18,7 +18,10 @@
         document.getElementById("my-slider").style.width = "0";
     }
 </script>
+
 <body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
     <div class="slider" id="my-slider">
         <a href="javascript:void(0)" class="closebtn" onclick="closeslide()">&times;</a>
         <a class="tag" href="#main1">Home</a>
@@ -454,6 +457,15 @@
                 <a href="mailto:yashwandhare1234@gmail.com"><i class="far fa-envelope fa-3x env"></i></a>
             </div>
         </div>
+        <script>
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            console.log(totalHeight);
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset/totalHeight)*100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
 
 </body>
 </html>
