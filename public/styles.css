@@ -4,14 +4,40 @@
   box-sizing: border-box;
 }
 *:focus{
-    outline: 0;
+    outline: none;
+
 }
 html{
     scroll-behavior: smooth;
     font-family: 'Lemonada', cursive;
+    overflow-x: hidden;
+    overflow-y: overlay;
 }
 body{
     background-blend-mode: multiply;
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+::-webkit-scrollbar {
+    width: 1em;
+    position: absolute;
+  
+  }
+  
+  ::-webkit-scrollbar-track {
+   
+    background:transparent;
+    display: none; 
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #ffffff;
+    border-radius:10px ;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: rgb(240, 234, 234);
+  }  
+
 }
 #clg-name{
     font-weight: 800;
@@ -230,7 +256,15 @@ body{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    outline: none;
+    background:transparent;
+    width: auto;
     
+  }
+  .slider .closebtn:hover {
+      outline: none;
+      background:transparent;
+      border: none;
   }
   
 @media(max-width:1442px){
